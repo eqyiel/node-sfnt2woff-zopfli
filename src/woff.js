@@ -7,6 +7,22 @@
 function woff() {}
 
 /**
+ * Convert WOFF data to TTF.
+ *
+ * @static
+ *
+ * @example
+ * var woff = require('woff');
+ * var input = fs.readFileSync('something.woff');
+ * var output = 'output.ttf';
+ * fs.writeFileSync(output, woff.decode(input));
+ *
+ * @param {Buffer} data WOFF font data to be decoded.
+ * @returns {Buffer} Decoded TTF data.
+ */
+woff.decode = require('bindings')('woff_decode.node').decode;
+
+/**
  * Convert TTF data to WOFF.
  *
  * @static

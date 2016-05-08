@@ -18,20 +18,21 @@
     "type": "git",
     "url": "git+https://github.com/eqyiel/node-sfnt2woff-zopfli.git"
   },
-  "license": "MIT",
+  "license": "MPL-1.1 and GPL-2.0 and LGPL-2.1",
   "dependencies": {
     "bindings": "^1.2.1",
     "nan": "^2.2.1",
     "node-gyp": "^3.3.1"
   },
   "devDependencies": {
+    "eslint": "^2.9.0",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-react": "^4.3.0",
     "font-awesome": "^4.6.1",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
-    "grunt-eslint": "^18.0.0",
-    "grunt-jsdoc-to-markdown": "^1.2.0",
+    "grunt-eslint": "^18.1.0",
+    "grunt-jsdoc-to-markdown": "^1.2.1",
     "mmmagic": "^0.4.1",
     "tap": "^5.7.1",
     "temp": "^0.8.3"
