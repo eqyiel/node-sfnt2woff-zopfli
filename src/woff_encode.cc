@@ -34,4 +34,4 @@ NAN_MODULE_INIT(Init) {
 }
 
 NODE_MODULE(woff_encode, Init)
-} // namespace v8
+}  // namespace v8
