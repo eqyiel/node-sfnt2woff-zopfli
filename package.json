@@ -24,6 +24,15 @@
     "nan": "^2.2.1",
     "node-gyp": "^3.3.1"
   },
+  "files": [
+    "./LICENSE",
+    "./README.md",
+    "./Gruntfile.js",
+    "./binding.gyp",
+    "./src/",
+    "./test/",
+    "./sfnt2woff-zopfli"
+  ],
   "devDependencies": {
     "eslint": "^2.9.0",
     "eslint-config-airbnb": "^6.2.0",
