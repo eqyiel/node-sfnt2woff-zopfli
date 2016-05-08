@@ -1,7 +1,7 @@
 {
   "name": "node-sfnt2woff-zopfli",
   "version": "0.0.2",
-  "description": "Node wrapper for sfnt2woff-zopfli utility.",
+  "description": "Node wrapper for bramstein's sfnt2woff-zopfli utility.",
   "main": "./src/woff.js",
   "scripts": {
     "test": "tap test/*.js"
