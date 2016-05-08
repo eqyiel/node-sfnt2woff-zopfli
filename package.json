@@ -1,6 +1,6 @@
 {
   "name": "node-sfnt2woff-zopfli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node wrapper for sfnt2woff-zopfli utility.",
   "main": "./src/woff.js",
   "scripts": {
@@ -21,17 +21,16 @@
   "license": "MPL-1.1 AND GPL-2.0 AND LGPL-2.1",
   "dependencies": {
     "bindings": "^1.2.1",
-    "nan": "^2.2.1",
-    "node-gyp": "^3.3.1"
+    "nan": "^2.2.1"
   },
   "files": [
-    "./LICENSE",
-    "./README.md",
-    "./Gruntfile.js",
-    "./binding.gyp",
-    "./src/",
-    "./test/",
-    "./sfnt2woff-zopfli"
+    "LICENSE",
+    "README.md",
+    "Gruntfile.js",
+    "binding.gyp",
+    "src/",
+    "test/",
+    "sfnt2woff-zopfli/"
   ],
   "devDependencies": {
     "eslint": "^2.9.0",
