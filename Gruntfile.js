@@ -9,6 +9,19 @@ This is just a Node.js wrapper around
 In respect for his work this wrapper is also MPL/GPL/LGPL licensed, but note
 that the Zopfli implementation is licensed under the Apache License.
 
+## Usage
+
+If you're using \`npm\`:
+
+\`\`\`
+npm install --save-dev sfnt2woff-zopfli
+\`\`\`
+
+Alternatively you can clone this repo and run \`npm install\`.  Be sure to get
+the submodule dependency (use the \`--recursive\` flag when cloning).  Note that
+you can't install directly from this repo because \`npm\` doesn't understand
+submodules.
+
 ## API Reference
 
 {{>all-docs~}}`;

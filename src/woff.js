@@ -12,7 +12,7 @@ function woff() {}
  * @static
  *
  * @example
- * var woff = require('woff');
+ * var woff = require('sfnt2woff-zopfli');
  * var input = fs.readFileSync('something.woff');
  * var output = 'output.ttf';
  * fs.writeFileSync(output, woff.decode(input));
@@ -28,7 +28,7 @@ woff.decode = require('bindings')('woff_decode.node').decode;
  * @static
  *
  * @example
- * var woff = require('woff');
+ * var woff = require('sfnt2woff-zopfli');
  * var input = fs.readFileSync('something.ttf');
  * var output = 'output.woff';
  * fs.writeFileSync(output, woff.encode(input));

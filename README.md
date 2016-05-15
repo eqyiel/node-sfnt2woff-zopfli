@@ -7,6 +7,19 @@ This is just a Node.js wrapper around
 In respect for his work this wrapper is also MPL/GPL/LGPL licensed, but note
 that the Zopfli implementation is licensed under the Apache License.
 
+## Usage
+
+If you're using `npm`:
+
+```
+npm install --save-dev sfnt2woff-zopfli
+```
+
+Alternatively you can clone this repo and run `npm install`.  Be sure to get
+the submodule dependency (use the `--recursive` flag when cloning).  Note that
+you can't install directly from this repo because `npm` doesn't understand
+submodules.
+
 ## API Reference
 
 <a name="woff"></a>
@@ -32,7 +45,7 @@ Convert WOFF data to TTF.
 
 **Example**  
 ```js
-var woff = require('woff');
+var woff = require('sfnt2woff-zopfli');
 var input = fs.readFileSync('something.woff');
 var output = 'output.ttf';
 fs.writeFileSync(output, woff.decode(input));
@@ -51,7 +64,7 @@ Convert TTF data to WOFF.
 
 **Example**  
 ```js
-var woff = require('woff');
+var woff = require('sfnt2woff-zopfli');
 var input = fs.readFileSync('something.ttf');
 var output = 'output.woff';
 fs.writeFileSync(output, woff.encode(input));
