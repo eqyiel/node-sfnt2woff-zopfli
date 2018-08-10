@@ -4,6 +4,8 @@
   "description": "Node wrapper for bramstein's sfnt2woff-zopfli utility.",
   "main": "./src/woff.js",
   "scripts": {
+    "lint": "npm run run-eslint",
+    "run-eslint": "./scripts/run-eslint.sh",
     "test": "tap test/*.js"
   },
   "author": {
