@@ -7,7 +7,7 @@
     "lint": "npm run run-prettier && npm run run-eslint",
     "run-eslint": "./scripts/run-eslint.sh",
     "run-prettier": "./scripts/run-prettier.sh",
-    "test": "tap test/*.js"
+    "test": "npm run lint && tap test/*.js"
   },
   "author": {
     "name": "Ruben Maher",
