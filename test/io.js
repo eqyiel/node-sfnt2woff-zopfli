@@ -1,4 +1,4 @@
-'use strict';
+
 
 const basePath = './node_modules/font-awesome/fonts';
 const fs = require('fs');
@@ -18,8 +18,7 @@ const magic = {
 test('Decode WOFF data.', (t) => {
   temp.mkdir('node-sfnt2woff-zopfli', (err, dirPath) => {
     if (err) throw err;
-    const data =
-            fs.readFileSync(path.join(basePath, 'fontawesome-webfont.woff'));
+    const data = fs.readFileSync(path.join(basePath, 'fontawesome-webfont.woff'));
     const file = path.join(dirPath, 'decoded.ttf');
     // eslint-disable-next-line no-shadow
     fs.writeFile(file, woff.decode(data), (err) => {
@@ -42,8 +41,7 @@ test('Decode WOFF data.', (t) => {
 test('Encode WOFF data.', (t) => {
   temp.mkdir('node-sfnt2woff-zopfli', (err, dirPath) => {
     if (err) throw err;
-    const data =
-            fs.readFileSync(path.join(basePath, 'fontawesome-webfont.ttf'));
+    const data = fs.readFileSync(path.join(basePath, 'fontawesome-webfont.ttf'));
     const file = path.join(dirPath, 'encoded.woff');
     // eslint-disable-next-line no-shadow
     fs.writeFile(file, woff.encode(data), (err) => {
