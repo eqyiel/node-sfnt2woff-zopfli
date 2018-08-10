@@ -9,11 +9,7 @@
     "run-prettier": "./scripts/run-prettier.sh",
     "test": "npm run lint && tap test/*.js"
   },
-  "author": {
-    "name": "Ruben Maher",
-    "email": "r@rkm.id.au",
-    "url": "https://rkm.id.au/"
-  },
+  "author": "Ruben Maher <ruben@maher.fyi>",
   "bugs": {
     "url": "https://github.com/eqyiel/node-sfnt2woff-zopfli/issues"
   },
