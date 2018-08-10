@@ -1,15 +1,11 @@
 {
-  "root": "true",
-  "extends": "airbnb",
-  "parserOptions": {
-    "ecmaVersion": 6
-  },
+  "root": true,
+  "extends": ["airbnb"],
   "env": {
     "node": true
   },
   "rules": {
     "comma-dangle": 0,
-    "strict": ["off", "safe"],
     "no-confusing-arrow": 0,
     "no-nested-ternary": 0
   }
