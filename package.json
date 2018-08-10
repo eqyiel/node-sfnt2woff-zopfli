@@ -36,11 +36,13 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.9.1",
     "font-awesome": "^4.6.1",
     "mmmagic": "^0.4.1",
+    "prettier": "^1.14.2",
     "tap": "^5.7.1",
     "temp": "^0.8.3"
   },
