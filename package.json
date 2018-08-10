@@ -44,5 +44,8 @@
     "mmmagic": "^0.4.1",
     "tap": "^5.7.1",
     "temp": "^0.8.3"
+  },
+  "renovate": {
+    "extends": [":pinOnlyDevDependencies"]
   }
 }
