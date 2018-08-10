@@ -47,6 +47,12 @@
     "tap": "^5.7.1",
     "temp": "^0.8.3"
   },
+  "prettier": {
+    "proseWrap": "always",
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "renovate": {
     "extends": [
       ":pinOnlyDevDependencies"
