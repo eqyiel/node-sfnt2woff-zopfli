@@ -2,8 +2,8 @@ const basePath = './node_modules/font-awesome/fonts';
 const fs = require('fs');
 const path = require('path');
 const temp = require('temp').track();
-const test = require('tap').test;
-const woff = require('../src/woff.js');
+const { test } = require('tap');
+const woff = require('../src/woff');
 
 const magic = {
   // http://www.garykessler.net/library/file_sigs.html
@@ -22,15 +22,15 @@ test('Decode WOFF data.', t => {
     // eslint-disable-next-line no-shadow
     fs.writeFile(file, woff.decode(data), err => {
       if (err) throw err;
-      const buffer = new Buffer(4);
+      const buffer = Buffer.alloc(4);
       // eslint-disable-next-line no-shadow
       fs.open(file, 'r', (err, fd) => {
         // eslint-disable-next-line no-shadow
         fs.read(fd, buffer, 0, 4, 0, (err, bytesRead, buffer) => {
+          // eslint-disable-next-line no-shadow
           fs.close(fd, err => {
-            // eslint-disable-line no-shadow
             if (err) throw err;
-            t.ok(buffer.equals(new Buffer(magic.ttf)));
+            t.ok(buffer.equals(Buffer.from(magic.ttf)));
             t.end();
           });
         });
@@ -49,15 +49,15 @@ test('Encode WOFF data.', t => {
     // eslint-disable-next-line no-shadow
     fs.writeFile(file, woff.encode(data), err => {
       if (err) throw err;
-      const buffer = new Buffer(4);
+      const buffer = Buffer.alloc(4);
       // eslint-disable-next-line no-shadow
       fs.open(file, 'r', (err, fd) => {
         // eslint-disable-next-line no-shadow
         fs.read(fd, buffer, 0, 4, 0, (err, bytesRead, buffer) => {
+          // eslint-disable-next-line no-shadow
           fs.close(fd, err => {
-            // eslint-disable-line no-shadow
             if (err) throw err;
-            t.ok(buffer.equals(new Buffer(magic.woff)));
+            t.ok(buffer.equals(Buffer.from(magic.woff)));
             t.end();
           });
         });
