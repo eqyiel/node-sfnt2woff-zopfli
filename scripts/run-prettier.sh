@@ -7,6 +7,7 @@ find "$(dirname "${0}")/../" \
   -name '*.js' \
   -o -name '*.json' \
   -o -name '*.md' \
+  -o -name '*.gyp' \
   \) \
   -not -path '*/node_modules/*' \
   -not -path '*/build/*' \
