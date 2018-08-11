@@ -8,8 +8,17 @@ addons:
   apt:
     update: true
 
+cache:
+  directories:
+    - "$HOME/.yarn-offline-mirror"
+
 before_install:
   - sudo apt-get install -y zlib1g-dev
+  - yarn config set yarn-offline-mirror "$HOME/.yarn-offline-mirror"
+  - yarn config set yarn-offline-mirror-pruning true
+
+install:
+  yarn --prefer-offline
 
 script:
   yarn run test && test -z "$(git status --porcelain)"
