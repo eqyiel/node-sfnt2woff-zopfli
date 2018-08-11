@@ -10,6 +10,13 @@ NAN_METHOD(encode) {
     return;
   }
 
+  if (!info[1]->IsUint32()) {
+    Nan::ThrowError("Second argument should be an integer.");
+    return;
+  }
+
+  uint32_t iterations = info[1]->Uint32Value();
+
   size_t input_length = node::Buffer::Length(input_buffer);
   char* input_data = node::Buffer::Data(input_buffer);
   unsigned int maj = 0, min = 0;
@@ -18,7 +25,8 @@ NAN_METHOD(encode) {
 
   const uint8_t* woffdata =
       woffEncode(reinterpret_cast<const uint8_t*>(input_data),
-                 ((uint32_t)input_length), maj, min, &wofflen, &status);
+                 ((uint32_t)input_length),
+                 maj, min, iterations, &wofflen, &status);
 
   Nan::MaybeLocal<v8::Object> output_buffer =
       Nan::NewBuffer(const_cast<char*>(reinterpret_cast<const char*>(woffdata)),
