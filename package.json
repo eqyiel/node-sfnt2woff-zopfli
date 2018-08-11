@@ -4,6 +4,7 @@
   "description": "Node wrapper for bramstein's sfnt2woff-zopfli utility.",
   "main": "./src/woff.js",
   "scripts": {
+    "build": "node-gyp rebuild",
     "lint": "npm run run-prettier && npm run run-eslint",
     "run-eslint": "./scripts/run-eslint.sh",
     "run-prettier": "./scripts/run-prettier.sh",
