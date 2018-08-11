@@ -1555,11 +1555,11 @@ mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-mmmagic@0.4.6:
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/mmmagic/-/mmmagic-0.4.6.tgz#5e2bcb88c4408164b77932339cb4326db37af235"
+mmmagic@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/mmmagic/-/mmmagic-0.5.0.tgz#d48abc98290d6bafb9c8c3eda5913e434e8cb9d0"
   dependencies:
-    nan "^2.4.0"
+    nan "^2.8.0"
 
 ms@2.0.0:
   version "2.0.0"
@@ -1569,7 +1569,7 @@ mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
 
-nan@^2.2.1, nan@^2.4.0:
+nan@^2.2.1, nan@^2.8.0:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.10.0.tgz#96d0cd610ebd58d4b4de9cc0c6828cda99c7548f"
 
