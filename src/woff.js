@@ -4,6 +4,9 @@
  */
 function woff() {}
 
+const { decode } = require('bindings')('woff_decode.node');
+const { encode } = require('bindings')('woff_encode.node');
+
 /**
  * Convert WOFF data to TTF.
  *
@@ -18,7 +21,7 @@ function woff() {}
  * @param {Buffer} data WOFF font data to be decoded.
  * @returns {Buffer} Decoded TTF data.
  */
-woff.decode = require('bindings')('woff_decode.node').decode;
+woff.decode = decode;
 
 /**
  * Convert TTF data to WOFF.
@@ -32,8 +35,9 @@ woff.decode = require('bindings')('woff_decode.node').decode;
  * fs.writeFileSync(output, woff.encode(input));
  *
  * @param {Buffer} data TTF font data to be encoded.
+ * @param {number} [iterations=15] Number of zopfli iterations.
  * @returns {Buffer} Encoded WOFF data.
  */
-woff.encode = require('bindings')('woff_encode.node').encode;
+woff.encode = (data, iterations = 15) => encode(data, iterations);
 
 module.exports = woff;
