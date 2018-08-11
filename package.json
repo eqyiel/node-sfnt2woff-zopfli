@@ -32,17 +32,17 @@
     "sfnt2woff-zopfli/"
   ],
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^17.0.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.9.1",
-    "font-awesome": "^4.6.1",
-    "mmmagic": "^0.4.1",
-    "prettier": "^1.14.2",
-    "tap": "^5.7.1",
-    "temp": "^0.8.3"
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "17.0.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.13.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.10.0",
+    "font-awesome": "4.7.0",
+    "mmmagic": "0.4.6",
+    "prettier": "1.14.2",
+    "tap": "5.8.0",
+    "temp": "0.8.3"
   },
   "prettier": {
     "proseWrap": "always",
