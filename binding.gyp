@@ -19,7 +19,8 @@
         "./sfnt2woff-zopfli/woff.c"
       ],
       "include_dirs": ["<!(node -e \"require('nan')\")"],
-      "cflags": ["-Wall"]
+      "cflags": ["-Wall"],
+      "libraries": ["<!@(pkg-config zlib --libs)"]
     },
     {
       "target_name": "woff_decode",
@@ -40,7 +41,8 @@
         "./sfnt2woff-zopfli/woff.c"
       ],
       "include_dirs": ["<!(node -e \"require('nan')\")"],
-      "cflags": ["-Wall"]
+      "cflags": ["-Wall"],
+      "libraries": ["<!@(pkg-config zlib --libs)"]
     }
   ]
 }

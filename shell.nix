@@ -29,6 +29,8 @@ in with nixpkgsUnstable.pkgs; stdenv.mkDerivation rec {
   buildInputs = with pkgs; [
     nodejs-6_x
     python
+    zlib
+    pkgconfig
   ] ++ (with nodePackages_6_x; [
     yarn node-gyp
   ]);
