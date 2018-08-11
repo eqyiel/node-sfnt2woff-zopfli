@@ -6,10 +6,10 @@ node_js:
 
 cache:
   directories:
-    - "$HOME/.yarn-offline-mirror"
+    - ".yarn-offline-mirror"
 
 before_install:
-  - yarn config set yarn-offline-mirror "$HOME/.yarn-offline-mirror"
+  - yarn config set yarn-offline-mirror ".yarn-offline-mirror"
   - yarn config set yarn-offline-mirror-pruning true
 
 install:
