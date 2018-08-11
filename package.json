@@ -48,7 +48,15 @@
     "proseWrap": "always",
     "semi": true,
     "singleQuote": true,
-    "trailingComma": "es5"
+    "trailingComma": "es5",
+    "overrides": [
+      {
+        "files": "binding.gyp",
+        "options": {
+          "parser": "json"
+        }
+      }
+    ]
   },
   "renovate": {
     "extends": [
